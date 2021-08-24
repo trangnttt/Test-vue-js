@@ -1,0 +1,67 @@
+.modal {
+  position: relative;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 10px 30px;
+  }
+
+  &__btn-close {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    transform: translateY(-50%);
+  }
+
+  &__header {
+    position: relative;
+    padding: 0 10px;
+    border-bottom: 1px solid #e2e2e2;
+    cursor: pointer;
+  }
+
+  &__title {
+    margin: 10px;
+  }
+
+  &__footer {
+    border-top: 1px solid #e2e2e2;
+    padding: 10px;
+    text-align: right;
+  }
+
+  &__btn {
+    padding: 5px 20px;
+    background: gray;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .ip-text {
+    padding: 5px;
+  }
+
+  .is-error {
+    color: red;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 13px;
+  }
+}
